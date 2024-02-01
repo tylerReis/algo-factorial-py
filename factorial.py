@@ -1,8 +1,6 @@
 def factorial(num):
-	answer = 1
-	while num > 0:
-		answer = answer * num
-		num = num - 1
-	return answer
+	if num == 0:
+		return 1
+	return num * factorial(num -1)
 
 print(factorial(8))
